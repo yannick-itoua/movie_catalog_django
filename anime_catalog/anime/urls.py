@@ -7,4 +7,5 @@ router.register(r'anime', AnimeViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    #path('load-anime/', AnimeViewSet.as_view({'post': 'create'}), name='load-anime'),  # Nouveau endpoint
 ]

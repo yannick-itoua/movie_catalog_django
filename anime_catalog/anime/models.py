@@ -1,7 +1,7 @@
 from django.db import models
 
 class Anime(models.Model):
-    mal_id = models.IntegerField(unique=True)  # MyAnimeList ID
+    anilist_id = models.IntegerField(unique=True)  # Identifiant AniList
     title = models.CharField(max_length=255)
     synopsis = models.TextField(null=True, blank=True)
     episodes = models.IntegerField(null=True, blank=True)

@@ -4,4 +4,4 @@ from .models import Anime
 class AnimeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Anime
-        fields = '__all__'
+        fields = "__all__"
